@@ -33,7 +33,7 @@ def to_up(arrow, index_first, index_second, elem):
         if arrow[index_first][index_second] != 0:
             return arrow, index_first + 1, index_second + 1, elem
 
-n = 4
+n = 7
 arrow = [[0]*n for _ in range(n)]
 index_first = 0
 index_second = 0
@@ -52,23 +52,5 @@ while True:
     if elem >= n * n + 1:
         break
 
-print(arrow)
-
-
-
-
-
-
-
-# n = 3
-# arrow = [[0]*n for i in range(n)]
-# index_first = 0
-# index_second = 0
-# round = 0
-# for i in range(1, n * n + 1):
-#     arrow[index_first][index_second] = i
-#     index_second += 1
-#
-#     if index_second == n:
-#         break
-# print(arrow)
+for _ in arrow:
+    print(_)
